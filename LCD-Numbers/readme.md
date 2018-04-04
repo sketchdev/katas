@@ -1,0 +1,1 @@
+You really miss the days of 7 segment displays anywhere.
