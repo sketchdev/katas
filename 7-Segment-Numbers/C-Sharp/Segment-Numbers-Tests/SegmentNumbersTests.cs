@@ -1,18 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using LCDNumbers;
+using Segment_Numbers;
 using System;
 
-namespace LCD_Numbers_Tests
+namespace Segment_Numbers_Tests
 {
     [TestClass]
     public class LcdNumbersTests
     {
-        public LcdNumbers System { get; set; }
+        public SegmentNumbers System { get; set; }
 
         [TestInitialize]
         public void Setup()
         {
-            System = new LcdNumbers();
+            System = new SegmentNumbers();
         }
 
         // EXAMPLE: Test that the number "1" has the correct result

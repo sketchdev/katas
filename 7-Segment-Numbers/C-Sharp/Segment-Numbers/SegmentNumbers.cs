@@ -1,5 +1,5 @@
 ﻿using System;
-namespace LCDNumbers
+namespace Segment_Numbers
 {
     // Each number translates to a 3x3 grid of either space, | or _, so:
     //
@@ -11,7 +11,7 @@ namespace LCDNumbers
     // | _|_||_||_ |_  ||_||_|| |
     // ||_ _|  | _||_| ||_| _||_|
 
-    public class LcdNumbers
+    public class SegmentNumbers
     {
         public string Translate(int number) {
             throw new NotImplementedException();

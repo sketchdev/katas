@@ -4,12 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
-public class LcdNumbersTest {
-	private LcdNumbers system;
+public class SegmentNumbersTest {
+	private SegmentNumbers system;
 
 	@Before
 	public void setup() {
-		system = new LcdNumbers();
+		system = new SegmentNumbers();
 	}
 	
 	@Test

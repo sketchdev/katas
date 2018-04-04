@@ -6,6 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="LCD-Numbers.cs" />
+    <Compile Remove="Segment-Numbers.cs" />
   </ItemGroup>
 </Project>

@@ -13,6 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LCD-Numbers\LCD-Numbers.csproj" />
+    <ProjectReference Include="..\Segment-Numbers\Segment-Numbers.csproj" />
   </ItemGroup>
 </Project>

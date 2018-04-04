@@ -1,6 +1,6 @@
 package io.sketchdev.kata;
 
-public class LcdNumbers {
+public class SegmentNumbers {
 
 	// Each number translates to a 3x3 grid of either space, | or _, so:
     //
