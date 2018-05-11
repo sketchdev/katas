@@ -7,9 +7,9 @@ namespace Segment_Numbers
     //
     // translates to:
     //
-    //   _ _     _    _  _  _  _
-    // | _|_||_||_ |_  ||_||_|| |
-    // ||_ _|  | _||_| ||_| _||_|
+    //     _ _     _    _  _  _  _
+    //   | _|_||_||_ |_  ||_||_|| |
+    //   ||_ _|  | _||_| ||_| _||_|
 
     public class SegmentNumbers
     {

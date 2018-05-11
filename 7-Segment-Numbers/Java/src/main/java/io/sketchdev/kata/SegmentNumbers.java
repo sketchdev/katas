@@ -8,9 +8,9 @@ public class SegmentNumbers {
     //
     // translates to:
     //
-    //   _ _     _    _  _  _  _
-    // | _|_||_||_ |_  ||_||_|| |
-    // ||_ _|  | _||_| ||_| _||_|
+    //     _ _     _    _  _  _  _
+    //   | _|_||_||_ |_  ||_||_|| |
+    //   ||_ _|  | _||_| ||_| _||_|
 
 	public String translate(int number) {
 		// TODO Auto-generated method stub
