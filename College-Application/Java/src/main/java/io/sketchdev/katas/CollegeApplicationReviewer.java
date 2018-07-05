@@ -8,7 +8,9 @@ public class CollegeApplicationReviewer {
         if (mathScore <350){
             return ReviewDecision.REJECT;
         }
-
+        if (readingScore <350){
+            return ReviewDecision.REJECT;
+        }
         if (combinedScore < 1000) {
             return ReviewDecision.REJECT;
 
