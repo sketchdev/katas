@@ -32,12 +32,12 @@ public class CollegeApplicationReviewerTest {
     }
     @Test
     public void testRejectMathScore() {
-        ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(349, 652);
+        ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(399, 602);
         assertEquals(ReviewDecision.REJECT, decision);
     }
     @Test
     public void testUndecidedMathScore() {
-        ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(350, 652);
+        ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(400, 602);
         assertEquals(ReviewDecision.UNDECIDED, decision);
     }
     @Test

@@ -5,7 +5,7 @@ public class CollegeApplicationReviewer {
     public ReviewDecision evaluateSATScore(int mathScore, int readingScore) {
 
         int combinedScore = mathScore + readingScore;
-        if (mathScore <350){
+        if (mathScore <400){
             return ReviewDecision.REJECT;
         }
         if (readingScore <350){
