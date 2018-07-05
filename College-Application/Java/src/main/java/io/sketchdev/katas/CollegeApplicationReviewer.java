@@ -15,7 +15,7 @@ public class CollegeApplicationReviewer {
             return ReviewDecision.REJECT;
 
         }
-        else if(mathScore >= 750 && readingScore >= 600){
+        else if((mathScore >= 750 && readingScore >= 600) || (mathScore >= 600 && readingScore >= 780)){
             return ReviewDecision.ACCEPT;
         }
         else

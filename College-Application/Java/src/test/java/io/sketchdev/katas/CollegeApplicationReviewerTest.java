@@ -60,5 +60,15 @@ public class CollegeApplicationReviewerTest {
         ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(749, 599);
         assertEquals(ReviewDecision.UNDECIDED, decision);
     }
+    @Test
+    public void testApproveScores2() {
+        ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(600, 780);
+        assertEquals(ReviewDecision.ACCEPT, decision);
+    }
+    @Test
+    public void testUndecidedScores2() {
+        ReviewDecision decision = new CollegeApplicationReviewer().evaluateSATScore(600, 779);
+        assertEquals(ReviewDecision.UNDECIDED, decision);
+    }
 
 }
