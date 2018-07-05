@@ -73,24 +73,8 @@ public class CollegeApplicationFormTest {
     }
 
     @Test
-    public void TestValidEmailKnownSpam_IsNotSaved()
-    {
+    public void TestValidEmailKnownSpam_IsNotSaved() {
         boolean saved = new CollegeApplicationForm().Apply("J", "W", "knownspam@spam.com");
         assertFalse(saved);
     }
-    
-//    @Test
-//    public void TestReallyLongHyphenatedLastName_IsNotSaved()
-//    {
-//       boolean saved = new CollegeApplicationForm().Apply("J", "wwwwwwwwwwwwwwwwwwwwwwwww-wwwwwwwwwwwwwwwwwwwwwwwww", "wheelie33@gmail.com");
-//       assertFalse(saved);
-//    }
-//
-//
-//    @Test
-//    public void TestHypehatedLastName_EachPartLessThanMax_TotalIsGreaterThanMax_IsNotSaved()
-//    {
-//       boolean saved = new CollegeApplicationForm().Apply("J", "wwwwwwwwwwwwwwwwww-wwwwwwwwwwwwwwwwww", "wheelie33@gmail.com");
-//       assertFalse(saved);
-//    }
 }
