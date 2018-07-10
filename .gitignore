@@ -1,3 +1,4 @@
 # Ignore tool and OS directories
 .DS_Store
 .vscode
+.idea
