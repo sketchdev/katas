@@ -13,7 +13,7 @@ public class DatabaseConnection
         _datasetname = datasetName;
     }
 
-    public Boolean IsConnected()
+    public Boolean isConnected()
     {
         return !(_serverName == null || _serverName.trim().length() == 0);
     }

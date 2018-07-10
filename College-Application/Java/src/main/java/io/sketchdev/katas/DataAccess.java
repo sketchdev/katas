@@ -3,11 +3,11 @@ package io.sketchdev.katas;
 import java.util.regex.Pattern;
 
 public class DataAccess {
-    public Boolean SaveCollegeApplication(String firstName, String lastName, String emailAddress)
+    public Boolean saveCollegeApplication(String firstName, String lastName, String emailAddress)
     {
         DatabaseConnection connection = new DatabaseConnection("(local)", 30, "Contacts");
 
-        if (!connection.IsConnected())
+        if (!connection.isConnected())
         {
             return false;
         }
@@ -55,7 +55,7 @@ public class DataAccess {
         if (!matches) return false;
 
         // config.featureToggles.RequireSpamPass
-        if (new SpamService().IsKnownSpam(emailAddress)) return false;
+        if (new SpamService().isKnownSpam(emailAddress)) return false;
 
         //finish saving the record here.
         return true;

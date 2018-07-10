@@ -8,73 +8,73 @@ import static org.junit.Assert.*;
 public class CollegeApplicationFormTest {
 
 	@Test
-	public void TestValidEmailIsSaved() {
-		boolean saved = new CollegeApplicationForm().Apply("J", "W", "wheelie33@gmail.com");
+	public void testValidEmailIsSaved() {
+		boolean saved = new CollegeApplicationForm().apply("J", "W", "wheelie33@gmail.com");
 	
 		assertTrue(saved);
 	}
 	
 	@Test
-    public void TestEmailMissingTld_IsNotSaved()
+    public void testEmailMissingTld_IsNotSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("J", "W", "wheelie33@gmail");
+        boolean saved = new CollegeApplicationForm().apply("J", "W", "wheelie33@gmail");
         assertFalse(saved);
     }
 
     @Test
-    public void TestEmailMissingAtSign_IsNotSaved()
+    public void testEmailMissingAtSign_IsNotSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("J", "W", "wheelie33gmail.com");
+        boolean saved = new CollegeApplicationForm().apply("J", "W", "wheelie33gmail.com");
         assertFalse(saved);
     }
 
 
     @Test
-    public void TestGenericData_IsSaved()
+    public void testGenericData_IsSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("Jason", "Whelehon", "wheelie33@gmail.com");
+        boolean saved = new CollegeApplicationForm().apply("Jason", "Whelehon", "wheelie33@gmail.com");
         assertTrue(saved);
     }
 
 
     @Test
-    public void TestLongFirstName_IsNotSaved()
+    public void testLongFirstName_IsNotSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("JasonJasonJasonJasonJasonJason", "Whelehon", "wheelie33@gmail.com");
+        boolean saved = new CollegeApplicationForm().apply("JasonJasonJasonJasonJasonJason", "Whelehon", "wheelie33@gmail.com");
         assertFalse(saved);
     }
 
     @Test
-    public void TestFirstNameContainsNonAlpha_IsNotSaved()
+    public void testFirstNameContainsNonAlpha_IsNotSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("12345", "Whelehon", "wheelie33@gmail.com");
+        boolean saved = new CollegeApplicationForm().apply("12345", "Whelehon", "wheelie33@gmail.com");
         assertFalse(saved);
     }
 
     @Test
-    public void TestLongLastName_IsNotSaved()
+    public void testLongLastName_IsNotSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("Jason", "WhelehonWhelehonWhelehonWhelehon", "wheelie33@gmail.com");
+        boolean saved = new CollegeApplicationForm().apply("Jason", "WhelehonWhelehonWhelehonWhelehon", "wheelie33@gmail.com");
         assertFalse(saved);
     }
 
     @Test
-    public void TestHyphenatedLastName_IsSaved()
+    public void testHyphenatedLastName_IsSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("Jason", "Smith-Johnson", "wheelie33@gmail.com");
+        boolean saved = new CollegeApplicationForm().apply("Jason", "Smith-Johnson", "wheelie33@gmail.com");
         assertTrue(saved);
     }
 
     @Test
-    public void TestInvalidEmail_IsNotSaved()
+    public void testInvalidEmail_IsNotSaved()
     {
-        boolean saved = new CollegeApplicationForm().Apply("Jason", "Whelehon", "wheelie33@gmailcom");
+        boolean saved = new CollegeApplicationForm().apply("Jason", "Whelehon", "wheelie33@gmailcom");
         assertFalse(saved);
     }
 
     @Test
-    public void TestValidEmailKnownSpam_IsNotSaved() {
-        boolean saved = new CollegeApplicationForm().Apply("J", "W", "knownspam@spam.com");
+    public void testValidEmailKnownSpam_IsNotSaved() {
+        boolean saved = new CollegeApplicationForm().apply("J", "W", "knownspam@spam.com");
         assertFalse(saved);
     }
 }
