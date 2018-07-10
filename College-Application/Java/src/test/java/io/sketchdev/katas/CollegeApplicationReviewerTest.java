@@ -31,4 +31,15 @@ public class CollegeApplicationReviewerTest {
         assertEquals(ReviewDecision.UNDECIDED, decision);
     }
 
+    @Test
+    public void testRejectReadingScoreBelow350() {
+        ReviewDecision decision = new CollegeApplicationReviewer().status(651, 349);
+        assertEquals(ReviewDecision.REJECT, decision);
+    }
+
+    @Test
+    public void testReadingScoreGTE350() {
+        ReviewDecision decision = new CollegeApplicationReviewer().status(650, 350);
+        assertEquals(ReviewDecision.UNDECIDED, decision);
+    }
 }

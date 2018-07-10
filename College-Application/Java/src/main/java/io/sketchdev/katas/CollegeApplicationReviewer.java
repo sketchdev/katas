@@ -6,7 +6,7 @@ public class CollegeApplicationReviewer {
     public ReviewDecision status(int mathScore,int readingScore) {
 
         int combinedScore = mathScore + readingScore;
-        if (combinedScore < 1000  || mathScore < 400){
+        if (combinedScore < 1000  || mathScore < 400 || readingScore < 350){
             return ReviewDecision.REJECT;
         }
         else {
