@@ -14,6 +14,14 @@ public class SegmentNumbers {
 
 	public String translate(int number) {
 		// TODO Auto-generated method stub
+		switch(number) {
+			case 1:
+				return "   \n  |\n  |";
+
+			case 2:
+				return " _ \n _|\n|_ ";
+		}
+
 		return null;
 	}
 

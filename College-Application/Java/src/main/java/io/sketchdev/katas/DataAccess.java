@@ -3,7 +3,7 @@ package io.sketchdev.katas;
 import java.util.regex.Pattern;
 
 public class DataAccess {
-    public Boolean saveCollegeApplication(String firstName, String lastName, String emailAddress)
+    public Boolean saveCollegeApplication(String firstName, String lastName, String emailAddress,int score)
     {
         DatabaseConnection connection = new DatabaseConnection("(local)", 30, "Contacts");
 

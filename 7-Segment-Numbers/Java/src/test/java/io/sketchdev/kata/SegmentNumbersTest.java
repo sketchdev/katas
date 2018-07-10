@@ -20,4 +20,13 @@ public class SegmentNumbersTest {
 
         assertEquals(expectedOne, translatedOne);
 	}
+
+	@Test
+	public void testTwo() {
+		String translatedOne = system.translate(2);
+
+		String expectedOne = " _ \n _|\n|_ ";
+
+		assertEquals(expectedOne, translatedOne);
+	}
 }
