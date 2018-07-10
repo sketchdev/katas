@@ -42,4 +42,23 @@ public class CollegeApplicationReviewerTest {
         ReviewDecision decision = new CollegeApplicationReviewer().status(650, 350);
         assertEquals(ReviewDecision.UNDECIDED, decision);
     }
+
+    @Test
+    public void testApproveMathGTE750ANDReadingGTE600() {
+        ReviewDecision decision = new CollegeApplicationReviewer().status(750, 600);
+        assertEquals(ReviewDecision.ACCEPT, decision);
+    }
+
+    @Test
+    public void testMathLT750ANDReadingGTE600() {
+        ReviewDecision decision = new CollegeApplicationReviewer().status(749, 600);
+        assertEquals(ReviewDecision.UNDECIDED, decision);
+    }
+
+    @Test
+    public void testMathGTE750ANDReadingLT600() {
+        ReviewDecision decision = new CollegeApplicationReviewer().status(750, 599);
+        assertEquals(ReviewDecision.UNDECIDED, decision);
+    }
+
 }
