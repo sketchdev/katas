@@ -16,8 +16,14 @@ public class SegmentNumbersTest {
 	public void testOne() {
         String translatedOne = system.translate(1);
 
-        String expectedOne = "   \n  |\n  |";
+        String[] one = {
+                "   ",
+                "   |",
+                "   |"
+            };
 
-        assertEquals(expectedOne, translatedOne);
+        String expected = String.join("\n", one);
+
+        assertEquals(expected, translatedOne);
 	}
 }
