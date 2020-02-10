@@ -1,5 +1,7 @@
 # Functionality
 
+## TODO: Update a "start" branch for College 2020
+
 ## Submit College Application
 
 Applicant provides name, email and ssn and submits application.
